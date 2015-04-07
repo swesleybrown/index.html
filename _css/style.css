@@ -83,21 +83,91 @@ table {
 /*-------------------------------------------------------------
 2.0 Typography
 --------------------------------------------------------------*/
-body {
+body,
+button,
+input,
+select,
+textarea {
+	color: #404040;
+    color: hsl(0, 0%, 25%);
 	font-family: 'Roboto;', sans-serif; 
-	font-size: 16px; 
-	color: #838994; 
-	letter-spacing: 0.03em;
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 1.5;
+}
+h1, h2, h3, h4, h5, h6 {
+	clear: right;
+    font-weight: 900;
+	font-family: 'Roboto', sans-serif;
+	color: #000;
+	color: hal(0, 0%, 0%);
+}
+p {
+	margin-bottom: 1.5em;
+}
+b, strong {
+	font-weight: bold;
+}
+dfn, cite, em, i {
+	font-style: italic;
+}
+blockquote {
+	margin: 0 1.5em;
+}
+address {
+	margin: 0 0 1.5em;
+}
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	font-size: 1.5rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+code, kbd, tt, var {
+	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+abbr, acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+mark, ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+sup,
+sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	bottom: 1ex;
+}
+sub {
+	top: .5ex;
+}
+small {
+	font-size: 75%;
+}
+big {
+	font-size: 125%;
 }
 /*-------------------------------------------------------------- 
 3.0 - Elements
 --------------------------------------------------------------*/
-/*- div {
+div {
 	border: 1px solid red;
 }
 body {
 	background-color: #ddd;
-} */
+} 
 /*--------------------------------------------------------------
 4.0 - Forms
 --------------------------------------------------------------*/
@@ -112,18 +182,18 @@ body {
     height: 70px;
     margin: 0 auto;
     padding: 0 0.938rem;
+
 }
 .links {
 	float: right;
-	padding-top: 27px;
-	padding-bottom: 23px;
+	padding-top: 20px;
+	padding-bottom: 15px;
 
 }
 .links li {
 	display: inline-block
 }
 ul li a {
-	
 	text-decoration: none;
 	margin-left: 25px;
 	display: inline-block
@@ -188,6 +258,14 @@ X.X - Header
 /*--------------------------------------------------------------
 10.0 - Content
 --------------------------------------------------------------*/
+.hero {
+	background-image: url('../_images/first-background.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45.938rem;
+    background-position: 0, 0;
+}
 /*--------------------------------------------------------------
 10.1 - Posts and pages
 --------------------------------------------------------------*/
