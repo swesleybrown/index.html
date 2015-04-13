@@ -178,6 +178,9 @@ body {
 --------------------------------------------------------------*/
 .top-navigation {
     background-color: #fff;
+    position: fixed;
+	width: 100%;
+	z-index: 9999;
 }
 .top-navigation > .content {
     width: 778px;
@@ -232,7 +235,9 @@ nav a:hover {
 /*--------------------------------------------------------------
 7.0 - Alignments
 --------------------------------------------------------------*/
-
+.center {
+	margin: 0 auto;
+}
 /*--------------------------------------------------------------
 8.0 - Clearings
 --------------------------------------------------------------*/
@@ -240,6 +245,13 @@ nav a:hover {
 	content: "";
   	display: table;
   	clear: both;
+}
+ul.flexbox {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
 /*--------------------------------------------------------------
 X.X - Header
@@ -249,23 +261,26 @@ X.X - Header
 	margin-bottom: 16px;
 }
 .content {
-	padding: 0px 15px 
+	padding: 0 0.938rem;
+    margin: 0 auto;
+    min-width: 37.5rem; 
   	-webkit-box-sizing: border-box; /* Safari 3.0 - 5.0, Chrome 1 - 9, Android 2.1 - 3.x */
   	-moz-box-sizing: border-box;    /* Firefox 1 - 28 */
   	box-sizing: border-box;         /* Safari 5.1+, Chrome 10+, Firefox 29+, Opera 7+, IE 8+, Android 4.0+, iOS any */
 }
+
 .introduction {
 	background-image: url('../_images/girl-sitting-on-table.jpg');
-    background-position: center top;
+    background-position: center 70px;
     background-repeat: no-repeat;
     background-size: cover ;
-    height: 45.938rem;
+    height: 38.938rem;
 }
 .feature {
 	text-align: center;
 }
 .introduction h1 {
-	padding-top: 18.3rem;
+	padding-top: 19.1rem;
   	font-size: 3.25rem;
   	color: #DB691E;
 }
@@ -296,6 +311,50 @@ X.X - Header
 /*--------------------------------------------------------------
 10.0 - Content
 --------------------------------------------------------------*/
+.content h2 {
+	text-align: center;
+
+}
+.devices li {
+	width: 33.3333%;
+    display: inline-block;
+    text-align: center;
+}
+.devices {
+	padding-top: 2.5rem;
+}
+.cases {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+} 
+
+.icons li a {
+	border-radius: 1.25rem;
+	width: 2.5rem;
+	height: 2.5rem;
+    display: inline-block;
+    margin: 1.25rem 5px;
+    border: 1px solid #666;
+    padding: 0.17rem 0;
+    text-align: center;
+
+}
+.icons li {
+	display: inline-block;
+	
+}
+ .social {
+ 	text-align: center;
+ }
+.social .twitter {
+    color: #55acee;
+}
+.social .facebook {
+    color: #4c66a4;
+}
+.social .instagram {
+    color: #3f729b;
+}
 
 /*--------------------------------------------------------------
 10.1 - Posts and pages
