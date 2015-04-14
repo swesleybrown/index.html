@@ -404,7 +404,7 @@ X.X - Header
 	display: none;
 }
 .content {
-	min-width: 400px;
+	min-width: 380px;
 }
 .links {
 	float: none;
