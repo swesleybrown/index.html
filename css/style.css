@@ -404,7 +404,7 @@ X.X - Header
 	display: none;
 }
 .content {
-	min-width: 380px;
+	min-width: 400px;
 }
 .links {
 	float: none;
@@ -443,6 +443,9 @@ section.cases li {
 
 }
 @media (max-width: 471px) {
+.content {
+	min-width: 380px;
+}
 .introduction h1 {
   	font-size: 2.6rem;
 }
