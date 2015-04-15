@@ -186,14 +186,12 @@ body {
     width: 778px;
     height: 70px;
     margin: 0 auto;
-    padding: 0 0.938rem;
 
 }
 .links {
 	float: right;
 	padding-top: 20px;
 	padding-bottom: 15px;
-
 }
 .links li {
 	display: inline-block
@@ -270,7 +268,7 @@ X.X - Header
 }
 
 .introduction {
-	background-image: url('../_images/girl-sitting-on-table.jpg');
+	background-image: url('../images/girl-sitting-on-table.jpg');
     background-position: center 70px;
     background-repeat: no-repeat;
     background-size: cover ;
@@ -280,7 +278,7 @@ X.X - Header
 	text-align: center;
 }
 .introduction h1 {
-	padding-top: 19.1rem;
+	padding-top: 21rem;
   	font-size: 3.25rem;
   	color: #DB691E;
 }
@@ -326,6 +324,8 @@ X.X - Header
 .cases {
 	padding-top: 5rem;
 	padding-bottom: 5rem;
+	width: 60rem;
+	margin: 0 auto;
 } 
 
 .icons li a {
@@ -343,8 +343,11 @@ X.X - Header
 	display: inline-block;
 	
 }
- .social {
+.social {
  	text-align: center;
+ 	width: 60rem;
+ 	margin: 0 auto;
+ 	padding-bottom: 5rem;
  }
 .social .twitter {
     color: #55acee;
@@ -371,3 +374,93 @@ X.X - Header
 /*--------------------------------------------------------------
 12.0 - Media
 --------------------------------------------------------------*/
+@media (min-width: 1480px) {
+.feature p {
+    background-color: hsla(255, 1%, 1%, .4);
+    display: inline-block;
+    line-height: 3rem;
+    padding: 4px;
+}
+}
+.feature button {
+    display: block;
+    margin: 0 auto;
+}
+@media (max-width: 975px) {
+.devices li {
+	width: 33.33%;
+    display: inline-block;
+    text-align: center;
+}
+.cases {
+	width: 100%;
+
+}
+.cases .content .divices {
+	margin: 0 auto;
+}
+.content hr {
+	width: 75%;
+}
+.social {
+ 	text-align: center;
+ 	width: 100%;
+ 	margin: 0 auto;
+ }
+
+}
+
+@media (max-width: 701px) {
+.top-navigation img {
+	display: none;
+}
+.content {
+	min-width: 100%;
+}
+.links {
+	float: none;
+	padding-top: 20px;
+	padding-bottom: 15px;
+	width: 100%;
+	text-align: center;
+}
+ul li a {
+	text-decoration: none;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.top-navigation > .content {
+    width: 100%;
+    height: 70px;
+}
+header.content {
+	padding: 0 0.938rem;
+    margin: 0 auto;
+    min-width: 0px; 
+  	-webkit-box-sizing: border-box; /* Safari 3.0 - 5.0, Chrome 1 - 9, Android 2.1 - 3.x */
+  	-moz-box-sizing: border-box;    /* Firefox 1 - 28 */
+  	box-sizing: border-box;         /* Safari 5.1+, Chrome 10+, Firefox 29+, Opera 7+, IE 8+, Android 4.0+, iOS any */
+}
+@media (max-width: 560px) {
+section.cases ul  {
+    display: block;
+}
+section.cases li {
+    width: 100%
+}
+
+}
+@media (max-width: 471px) {
+.introduction h1 {
+  	font-size: 2.6rem;
+}
+.introduction p {
+  	font-size: 1.2rem;
+}
+ul.links {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+}
