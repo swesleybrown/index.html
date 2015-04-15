@@ -410,7 +410,8 @@ X.X - Header
 
 }
 
-@media (max-width: 701px) {
+
+@media (max-width: 780px) {
 .top-navigation img {
 	display: none;
 }
@@ -452,6 +453,9 @@ section.cases li {
 
 }
 @media (max-width: 471px) {
+.content {
+	min-width: 380px;
+}
 .introduction h1 {
   	font-size: 2.6rem;
 }
@@ -464,3 +468,4 @@ ul.links {
     font-size: 1.5rem;
 }
 }
+
